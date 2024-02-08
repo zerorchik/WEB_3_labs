@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>СР 1 Павлова</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Самостійна робота №1</h2>
+</header>
+<section>
+    <nav></nav>
+    <article>
+        <div class="first_column">
+            <div class="card_full">
+                <h2>Реєстрація</h2>
+                <p>Зверніть увагу, що сама форма не відображається.</p>
+                <p>Також зверніть увагу, що за замовчуванням ширина поля<br>введення тексту складає 20 символів.</p>
+                <form>
+                <br><label for="fname"><strong>Ім'я:<br></label><br>
+                <input type="text" id="fname" name="fname" value="Sofiia"><br><br>
+                <label for="lname">Прізвище:<br></label><br>
+                <input type="text" id="lname" name="lname" value="Pavlova"><br><br>
+                </form>
+                <button type="button" onclick="alert('Слава Україні!')">Зареєструватись</button>
+            </div>
+            <div class="card">
+                <h2>Карти зображень</h2>
+                <p>Клікніть на комп'ютер, телефон або чашку кави, щоб перейти<br>на нову сторінку і дізнатися більше про тему:</p>
+                <!--Мапа-->
+                <img src="images/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+                <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Компьютер" href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%27%D1%8E%D1%82%D0%B5%D1%80">
+                <area shape="rect" coords="290,172,333,250" alt="Телефон" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD">
+                <area shape="circle" coords="337,300,44" alt="Чашка кофе" href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B2%D0%B0">
+                </map>
+            </div>
+            
+    
+            <div class="card_text">
+                <h2>Стилізація таблиць</h2>
+                <p>Тег "table" визначає HTML таблицю. Кожен рядок таблиці визначається тегом "tr". 
+                    Кожен заголовок таблиці визначається тегом "th". 
+                    Кожна чарунка з даними таблиці визначається тегом "td". 
+                    За замовчуванням текст в елементах "th" виділений жирним шрифтом і відцентрований.</p>
+            </div>
+            <table>
+                <tr>
+                    <th>Ім’я</th>
+                    <td>Jill</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Телефон</th>
+                    <td>555-1234</td>
+                  </tr>
+                  <tr>
+                    <td>555-8745</td>
+                  </tr>
+              </table>    
+        </div>
+    </article>
+    <article>
+        <div class="second_column">
+            <div class="card">
+                <h2>Елемент picture</h2>
+                <picture>
+                    <source media="(min-width: 3000px)" srcset="images/abra.jpg">
+                    <source media="(min-width: 1800px)" srcset="images/home.jpg">
+                    <img src="images/town.jpg" style="width:auto;">
+                </picture>
+            </div>
+            <div class="card_full">
+                <h2>Вкладений список</h2>
+                <p>Список може бути вкладеним (списки всередині списків):</p>
+                <ul>
+                  <li>Кава</li>
+                  <li>Чай
+                    <ul>
+                      <li>Чорний чай</li>
+                      <li>Зелений чай</li>
+                    </ul>
+                  </li>
+                  <li>Молоко</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card_text">
+            <h2>Фонова обкладинка</h2>
+            <p>Встановіть для властивості background-size значення "cover", і фонове зображення буде охоплювати весь елемент, в даному випадку елемент BODY.</p>
+        </div>
+        <div class="card_bg">
+            <!--Фонове зображення-->
+        </div>
+    </article>
+</section>
+
+</body>
+</html>

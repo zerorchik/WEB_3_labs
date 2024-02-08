@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>СР 2 Павлова</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Самостійна робота №2</h2>
+</header>
+<section>
+    <article>
+        <div class="column" id="first">
+            <div class="card">
+                <h2>Межі</h2>
+                <p>Щоб скоротити код, також можна вказати всі окремі властивості межі в одній властивості.</p>
+                <p class="border">У мене ліва синя межа</p>
+            </div>
+            <div class="card" id="black">
+                <h2>Поля та внутрішній відступ</h2>
+                <p>Ширина цього div залишається рівною 300 пікселів, незважаючи на 50 пікселів загального лівого та правого відступу, через властивість box-sizing: border-box.</p>
+            </div>
+            <div class="card">
+                <h2>Списки</h2>
+                <ul>
+                    <li>Кава</li>
+                    <ul>
+                        <li>Чай</li>
+                        <ul>
+                            <li>Молоко</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Посилання і кнопки</h2>
+                <button onclick="window.location.href = 'https://www.youtube.com/watch?v=s-GW3pPQuj4';">Порада життя</button>
+            </div>
+            <div class="card" id="drop">
+                <h2>Випадаюче зображення</h2>
+                <p>Наведіть вказівник миші на зображення нижче, щоб відкрити розкривний список вмісту.</p>
+                <div class="dropdown">
+                    <img id="image" src="images/home.jpg">
+                    <img id="image" src="images/print.jpg">
+                    <div class="dropdown-content">
+                        <img id="image_1" src="images/home.jpg">
+                        <div class="desc">Modern house style in architecture</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <div class="column" id="second">
+            <div class="card">
+                <h2>Адаптивна таблиця</h2>
+                <p>Адаптивна таблиця відображатиме горизонтальну смугу прокрутки, якщо екран занадто малий для відображення повного вмісту. Змініть розмір вікна браузера, щоб побачити ефект:</p>
+                <p>Щоб створити адаптивну таблицю, додайте елемент-контейнер (наприклад, div) з <strong>overflow-x:auto</strong> навколо елемента таблиці:</p>
+            </div>
+            <div class="card" id="text" style="overflow-x: auto;">
+                <table>
+                    <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    </tr>
+                    <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    </tr>
+                    <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    </tr>
+                    <tr>
+                    <td>Adam</td>
+                    <td>Johnson</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card">
+                <h2>CSS-анімація</h2>
+                <p>Властивість "кількість анімацій-ітерацій" можна встановити як нескінченну, щоб анімація працювала назавжди:</p>
+                <div class="animation_1"></div>
+                <div class="animation_2"></div>
+                <div class="animation_3"></div>
+            </div>
+            <div class="card" id="black">
+                <h2>Пагінація</h2>
+                <p>Виділіть класом поточну сторінку та скористайтеся селектором, щоб змінити колір кожного посилання на сторінку, наводячи на них курсор миші:.active:hover</p>
+                <div class="pagination">
+                    <div class="pagination_2">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#" class="active">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="bg">
+                <h2 style="width: fit-content; background-color:#331ef4;"">Переходи</h2>
+                <p style=background-color:#331ef4;>Наведіть курсор на елемент div нижче, щоб побачити ефект переходу:</p>
+            </div>
+        </div>
+    </article>
+</section>
+
+</body>
+</html>
